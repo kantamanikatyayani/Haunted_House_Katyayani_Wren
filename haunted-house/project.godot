@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Haunted_House"
+run/main_scene="uid://dkudl38hw5h0g"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

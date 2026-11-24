@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://ddxlebywp25sx"]
+
+[ext_resource type="Texture2D" uid="uid://kgq5ccbxoy1k" path="res://Art Assets/Fading_Enemy_animation1.png" id="1_e1ltt"]
+[ext_resource type="Texture2D" uid="uid://cr3siyvgwsai1" path="res://Art Assets/Fading_Enemy_animation2.png" id="2_dxifv"]
+[ext_resource type="Texture2D" uid="uid://copo3tkphbjo6" path="res://Art Assets/Fading_Enemy_animation3.png" id="3_pwjut"]
+[ext_resource type="Texture2D" uid="uid://dgq7i52s0s7w6" path="res://Art Assets/Fading_Enemy_animation4.png" id="4_n0g06"]
+[ext_resource type="Texture2D" uid="uid://bokg6exndyttv" path="res://Art Assets/Fading_Enemy_animation5.png" id="5_ar8e5"]
+[ext_resource type="Texture2D" uid="uid://bo8myyx4dvrmj" path="res://Art Assets/Enemy_animation_normal1.png" id="6_doop2"]
+[ext_resource type="Texture2D" uid="uid://di13y2v65trkq" path="res://Art Assets/Enemy_animation_normal2.png" id="7_5hcft"]
+[ext_resource type="Texture2D" uid="uid://dccsyf70w6hun" path="res://Art Assets/Enemy_animation_normal3.png" id="8_nnovl"]
+[ext_resource type="Script" uid="uid://fimarewdl2hb" path="res://animated_sprite_2d.gd" id="9_jmwgi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qi5v2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_e1ltt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dxifv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pwjut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n0g06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ar8e5")
+}],
+"loop": 1,
+"name": &"fading",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_doop2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5hcft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_nnovl")
+}],
+"loop": 1,
+"name": &"normal",
+"speed": 5.0
+}]
+
+[node name="Enemy" type="Node2D" unique_id=661886996]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1124438369]
+position = Vector2(88.99999, 78)
+scale = Vector2(2.578125, 2.359375)
+sprite_frames = SubResource("SpriteFrames_qi5v2")
+animation = &"fading"
+frame_progress = 0.38425496
+script = ExtResource("9_jmwgi")
