@@ -1,0 +1,16 @@
+[gd_resource type="AnimatedTexture" format=3 uid="uid://cxdyuyct6w8t7"]
+
+[ext_resource type="Texture2D" uid="uid://bwewvdy2okoai" path="res://Art Assets/chest1.png" id="1_o6c82"]
+[ext_resource type="Texture2D" uid="uid://ncjk53npnvh5" path="res://Art Assets/chest2.png" id="2_4py2w"]
+[ext_resource type="Texture2D" uid="uid://qvulrjjshlj2" path="res://Art Assets/chest3.png" id="3_omc4o"]
+[ext_resource type="Texture2D" uid="uid://dip5cekmm5dtu" path="res://Art Assets/chest4.png" id="4_bv47y"]
+
+[resource]
+frames = 4
+frame_0/texture = ExtResource("1_o6c82")
+frame_1/texture = ExtResource("2_4py2w")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3_omc4o")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("4_bv47y")
+frame_3/duration = 1.0

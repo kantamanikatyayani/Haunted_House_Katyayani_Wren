@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bsrp21hr82vu7"]
+
+[ext_resource type="PackedScene" uid="uid://226mmieq4etw" path="res://Scenes/collectable_item.tscn" id="1_lsmp6"]
+[ext_resource type="PackedScene" uid="uid://c4jfveksfub6j" path="res://Scenes/player.tscn" id="1_xrdnt"]
+[ext_resource type="Texture2D" uid="uid://cols0vfug5m4h" path="res://Art Assets/porcelain_doll.png" id="2_xrdnt"]
+[ext_resource type="Texture2D" uid="uid://bjy1hfl3jv0m4" path="res://Art Assets/key.png" id="3_wrinw"]
+[ext_resource type="Texture2D" uid="uid://4pj3cn5pmh5" path="res://Art Assets/golden_apple.png" id="4_chwpn"]
+[ext_resource type="Texture2D" uid="uid://c8on8eesugbnn" path="res://Art Assets/bag_of_cash.png" id="5_af3po"]
+[ext_resource type="Texture2D" uid="uid://cxdyuyct6w8t7" path="res://Inventory/chest.tres" id="6_uy8f0"]
+[ext_resource type="Texture2D" uid="uid://b3dt5313e8j58" path="res://Inventory/ring.tres" id="7_6r07y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qi5v2"]
+
+[node name="Level 1" type="Area2D" unique_id=1611272124]
+
+[node name="Player" parent="." unique_id=465855377 instance=ExtResource("1_xrdnt")]
+position = Vector2(28, 152)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=700312973]
+position = Vector2(-3, 3)
+shape = SubResource("CircleShape2D_qi5v2")
+
+[node name="doll" parent="." unique_id=155424401 instance=ExtResource("1_lsmp6")]
+position = Vector2(39, 40)
+item_texture = ExtResource("2_xrdnt")
+
+[node name="key" parent="." unique_id=1678250540 instance=ExtResource("1_lsmp6")]
+position = Vector2(147, 32)
+item_texture = ExtResource("3_wrinw")
+
+[node name="golden_apple" parent="." unique_id=842493507 instance=ExtResource("1_lsmp6")]
+position = Vector2(88, 29)
+item_texture = ExtResource("4_chwpn")
+
+[node name="bagofcash" parent="." unique_id=997124824 instance=ExtResource("1_lsmp6")]
+position = Vector2(194, 17)
+item_texture = ExtResource("5_af3po")
+
+[node name="chest" parent="." unique_id=1336565603 instance=ExtResource("1_lsmp6")]
+position = Vector2(251, 32)
+item_texture = ExtResource("6_uy8f0")
+
+[node name="ring" parent="." unique_id=1886457794 instance=ExtResource("1_lsmp6")]
+position = Vector2(255, 99)
+item_texture = ExtResource("7_6r07y")
