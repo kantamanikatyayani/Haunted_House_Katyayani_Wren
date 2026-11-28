@@ -1,9 +1,10 @@
-[gd_scene format=3 uid="uid://clvwrcstgc4r8"]
+[gd_scene format=3 uid="uid://c4jfveksfub6j"]
 
 [ext_resource type="Texture2D" uid="uid://ccm3ijmgphht2" path="res://Art Assets/Player_Idle-Sheet.png" id="1_6t5aa"]
-[ext_resource type="Script" uid="uid://yo0c54f7nmgp" path="res://scripts/player.gd" id="1_vgqql"]
+[ext_resource type="Script" uid="uid://cj1utogtf1q6u" path="res://Scenes/player.gd" id="1_fkybt"]
 [ext_resource type="Texture2D" uid="uid://cu7frjt2ul7pe" path="res://Art Assets/Player_Run-Sheet.png" id="2_vgqql"]
 [ext_resource type="Texture2D" uid="uid://c73w8bbv02p8q" path="res://Art Assets/Player_Walk-Sheet.png" id="3_fkybt"]
+[ext_resource type="PackedScene" uid="uid://dqciepp1cs8fx" path="res://Inventory/inventory_ui.tscn" id="5_fkybt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x3wgy"]
 atlas = ExtResource("1_6t5aa")
@@ -160,7 +161,7 @@ animations = [{
 size = Vector2(13, 44.5)
 
 [node name="Player" type="CharacterBody2D" unique_id=465855377]
-script = ExtResource("1_vgqql")
+script = ExtResource("1_fkybt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=605351111]
 texture_filter = 1
@@ -171,3 +172,5 @@ frame_progress = 0.6596079
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=186357358]
 shape = SubResource("RectangleShape2D_lyvsy")
+
+[node name="InventoryUI" parent="." unique_id=635330273 instance=ExtResource("5_fkybt")]

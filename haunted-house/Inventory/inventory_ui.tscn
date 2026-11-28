@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://dqciepp1cs8fx"]
+
+[ext_resource type="Texture2D" uid="uid://be36elcqfjgfh" path="res://Art Assets/inventory.png" id="1_inc1q"]
+[ext_resource type="Script" uid="uid://dlntapjx3nfd8" path="res://Inventory/inventory_ui.gd" id="1_o6avf"]
+
+[node name="InventoryUI" type="Control" unique_id=635330273 groups=["inventory_ui"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o6avf")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=32206529]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 0
+offset_left = -14.0
+offset_top = -41.0
+offset_right = 357.0
+offset_bottom = 200.0
+texture = ExtResource("1_inc1q")
+
+[node name="GridContainer" type="GridContainer" parent="TextureRect" unique_id=613092245]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 74.0
+offset_right = 331.0
+offset_bottom = 192.0
+columns = 4
+
+[node name="Slot1" type="TextureRect" parent="TextureRect/GridContainer" unique_id=1510521453]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/GridContainer/Slot1" unique_id=1528176818]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+
+[node name="Slot2" type="TextureRect" parent="TextureRect/GridContainer" unique_id=57150397]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/GridContainer/Slot2" unique_id=1685861262]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+
+[node name="Slot3" type="TextureRect" parent="TextureRect/GridContainer" unique_id=36500520]
+custom_minimum_size = Vector2(66, 5)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/GridContainer/Slot3" unique_id=506219013]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+
+[node name="Slot4" type="TextureRect" parent="TextureRect/GridContainer" unique_id=2118640464]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/GridContainer/Slot4" unique_id=154733328]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+
+[node name="Slot5" type="TextureRect" parent="TextureRect/GridContainer" unique_id=258420201]
+custom_minimum_size = Vector2(40, 45)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/GridContainer/Slot5" unique_id=28141904]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+
+[node name="Slot6" type="TextureRect" parent="TextureRect/GridContainer" unique_id=78408663]
+custom_minimum_size = Vector2(30, 45)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/GridContainer/Slot6" unique_id=1901886467]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
+
+[node name="Slot7" type="TextureRect" parent="TextureRect/GridContainer" unique_id=1385424678]
+custom_minimum_size = Vector2(35, 55)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/GridContainer/Slot7" unique_id=2073824057]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+expand_mode = 1
